@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        APP_NAME = 'sbthapi0'
+        APP_NAME = 'investor-api'
         APP_VERSION = '1.0.0'
     }
     stages {
