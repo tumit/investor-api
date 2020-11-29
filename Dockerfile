@@ -5,7 +5,7 @@ FROM gradle:6.6.1 as building
 
 ENV TZ=Asia/Bangkok
 
-COPY build.gradle gradle.properties gradlew settings.gradle ./
+COPY build.gradle gradlew settings.gradle ./
 RUN gradle build --no-daemon 2>/dev/null || return 0
 
 COPY . .
